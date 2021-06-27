@@ -10,18 +10,20 @@
         <meta name = 'Author' content = 'Lucapar45/Michela Marinai'>
         <meta name = 'Description' content = 'Condivisione e Vendita di quadri di arte contemporanea, artista: Michela Marinai'>
         <meta name = 'Keywords' context = 'Art, Arte, Artist, Contemporary Art'>
-        <script>document.getElementById("defaultOpen").click();</script>
+        <!--<script>
+        getElementById("defaultOpen").click();
+        </script>-->
     </head>
 <!--There starts the Body Section-->
     <body>
         <div id = 'hotbar'>
         <!--Curtain Menu Body-->
+        <button class = 'tablink' id = 'defaultOpen' onclick = "openPage('home', this)"><i class="fa fa-fw fa-home"></i>Home</button>
         <div id = 'curt-menu'>
-        
             <div id="mySidenav" class="sidenav">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style = 'text-decoration: none;'>&times;</a>
-                <button class = 'tablink' on_click = 'openPage(marketplace, this)'>Marketplace</button>
-                <button class = 'tablink' on_click = 'openPage(v_tour, this)'>Virtual Tour</button>
+                <button class = 'tablink' onclick = "openPage('marketplace', this)">Marketplace</button>
+                <button class = 'tablink' onclick = "openPage('v_tour', this)">Virtual Tour</button>
               </div>
         </div>
               <!-- Use any element to open the sidenav -->
@@ -69,7 +71,6 @@
             <div id = 'home' class = 'tabcontent'>
                 <!--Header And Title-->
                 <div id = 'header'>
-                </br>
                     <h1 class = 'title'>Michela Marinai</h1>
                 </div>
             </div>
@@ -77,7 +78,6 @@
             <!--Virtual Tour Tab-->
             <div id = 'v_tuor' class = 'tabcontent'>
                 <div id = 'header'>
-                </br>
                     <h1 class = 'title'>Virtual Tour</h1>
                 </div>
             </div>
@@ -94,12 +94,11 @@
         <footer id = 'footer'>
             <a class = "fb-link" href = 'https://www.facebook.com/michela.marinai.12/'>Facebook</a>
             <a class = "ig-link" href = 'https://www.instagram.com/mikela_marina_6/'>Instagram</a>
-            <button class = 'tablink' id = 'defaultOpen' onclick = 'openPage(home, this)'>HOME</button>
             <div class = 'info'>
             <button class = "infobtn">i</button>
             <div id = 'myInfocontent' class = 'infocontent'>
                 <link class = 'lp45logo' href = 'https://cdn.discordapp.com/avatars/542776270547714049/ce60b4d631ea27c9ed1349282df5cf55.png?size=512' type = 'image/png'/>
-                <p>Io sono Lucapar45, e ho programmato qesto sito!<br>
+                <p>Io sono <a href = 'https://www.instagram.com/lucapar45/'>@Lucapar45</a>, e ho programmato qesto sito!<br>
                 Sito completamente programmato con HTML5, CSS3, JavaScript e PHP</p>
             </div>
             </div>

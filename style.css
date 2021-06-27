@@ -24,7 +24,7 @@ body, html {
 
 #hotbar{
     position: fixed;
-    width: 99%;
+    width: 100%;
     background-color: rgba(138, 43, 226, 0.5);
     border-radius: 5px;
 }
@@ -235,7 +235,11 @@ body, html {
 #footer{
     position: fixed;
     bottom: 15px;
-    width: 97%;
+    width: 98%;
+}
+
+#defaultOpen{
+    
 }
 
 .fb-link{
@@ -320,4 +324,10 @@ display: block;
 
 #hotbar .bar :hover{
     background-color: #333;
+}
+
+#home{
+    display: block;
+    width:98%;
+    height:100%;
 }
